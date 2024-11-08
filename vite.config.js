@@ -10,7 +10,7 @@ export default ({ mode }) => {
     const proxy_url =
         process.env.VITE_DEV_REMOTE === "remote"
             ? process.env.VITE_BACKEND_SERVER
-            : "http://localhost:3000/";
+            : "https://animated-bonbon-d0c7b2.netlify.app/";
 
     const config = {
         plugins: [react()],

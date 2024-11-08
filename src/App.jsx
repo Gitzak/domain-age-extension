@@ -31,7 +31,7 @@ function App() {
                 const url = new URL(currentTab.url);
                 const domain = url.hostname;
 
-                const response = await axios.get(`${import.meta.env.VITE_APP_API_URL}/api/domain-age/${domain}`,
+                const response = await axios.get(`${import.meta.env.VITE_APP_API_URL}/.netlify/functions/api/domain-checker/${domain}`,
                     {
                         headers: {
                             'Content-Type': 'application/json',
